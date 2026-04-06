@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Defonte';
+  src: url("fuente/DeFonte reduced Normale.otf") format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Defonte', sans-serif; 
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    padding: 3rem 2rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Defonte', sans-serif;
+    transition: opacity 0.3s ease;
+}
+
+.navegacion a:hover {
+    opacity: 0.5;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem;
+    padding: 0 8% 5rem 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch; 
+}
+
+
+.contenedor-proyectos a {
+    text-decoration: none; 
+    color: black;         
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;    
+    transition: transform 0.3s ease;
+}
+
+.contenedor-proyectos a:hover {
+    transform: translateY(-10px); 
+}
+
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto h2 {
+    font-family: 'Defonte', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: black; 
+}
+
+.img-wrapper {
+    width: 100%;
+    max-height: 600px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+    display: block;
+}
+
+.numero {
+    font-family: 'Defonte', sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    color: black; 
+    margin-top: auto; 
+    padding-top: 1rem;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 900px) {
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    
+    .numero {
+        font-size: 6rem;
+    }
+}
+

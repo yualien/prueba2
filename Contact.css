@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Defonte';
+  src: url("fuente/DeFonte reduced Normale.otf") format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Defonte';
+  background-color: white;
+  color: black;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contacto{
+    justify-content: center;
+    
+}
+

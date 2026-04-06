@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Defonte';
+  src: url("fuente/DeFonte reduced Normale.otf") format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Defonte';
+  background-color: white;
+  color: black;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem;
+    align-items: center;
+}
+
+.info h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info p{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+.img-grande{
+    display: flex;
+    justify-content: center;
+}
+
+.img-grande img{
+    width: 100%;
+    max-width: 420px;
+}
+
+.img-columna{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.img-columna img{
+    width: 100%;
+    max-width: 260px;
+}

@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Defonte';
+    src: url("fuente/DeFonte reduced Normale.otf") format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Defonte', sans-serif; 
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    padding-bottom: 8rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    padding: 3rem 2rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+}
+
+
+.intro-riso {
+    padding: 1rem 10% 2rem 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.intro-riso h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.intro-riso p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    max-width: 600px;
+}
+
+
+.galeria-riso {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; 
+    gap: 3rem;
+    padding: 0 10%;
+    max-width: 1600px;
+    margin: 0 auto 6rem auto;
+    align-items: start;
+}
+
+.foto-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.galeria-detalles {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8rem; 
+    padding: 0 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.obra-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.img-wrapper-riso {
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+    margin-bottom: 1rem;
+}
+
+.img-wrapper-riso img {
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+.alien-single {
+    width: 55%;
+    transform: translateY(-30px); 
+}
+
+.balones-single {
+    width: 40%; 
+}
+
+.alien-single img {
+    width: 100%; 
+    max-width: 550px; 
+}
+
+.balones-single img {
+    width: 100%; 
+    max-width: 350px; 
+}
+
+.pie-de-foto {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .galeria-detalles {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+    .alien-single, .balones-single {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+.galeria-detalles2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;               
+    padding: 6rem 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.michis-single, .detail-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;            
+}
+
+.michis-single img, .detail-single img {
+    width: 100%;
+    max-width: 400px;       
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+
+.galeria-detalles2 .pie-de-foto {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+}
